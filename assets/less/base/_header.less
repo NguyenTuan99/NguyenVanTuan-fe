@@ -1,0 +1,450 @@
+body {
+  color: @font-color;
+  font-family: "Poppins";
+}
+
+.header {
+  background-color:@background-color;
+  display: block;
+
+  &__top {
+    position: relative;
+    background-color: @border-color;
+    height: 72px;
+    color: @font-color;
+    .flex(flex, null, space-between);
+    padding-top: 20px;
+
+    &__left {
+      display: inline-flex;
+
+      &__item {
+        display: flex;
+
+        &__icon {
+          .size(32px);
+          border: 1px solid @inf-color;
+          display: flex;
+
+          i {
+            margin:auto;
+            text-align: center;
+            color: @inf-color;
+            font-size: 16px;
+          }
+
+        }
+
+        &__infor {
+          height: 32px;
+          margin-top: 5px;
+
+          p {
+            padding: 1px 5px 0 10px;
+            font-size: 12px;
+            line-height: 1px;
+            font-weight: 500;
+          }
+
+          p:first-child {
+            letter-spacing: 0.4px;
+          }
+
+          p:last-child{
+            letter-spacing: 0.2px;
+            color: @background-color;
+          }
+
+        }
+
+      }
+
+      &__item:first-child {
+        margin-right: 10px;
+      }
+
+      &__item:last-child {
+        margin-left: 10px;
+
+        p:last-child {
+          letter-spacing: 0.58px;
+          color: @background-color;
+        }
+
+      }
+
+    }
+
+    &__right {
+      margin-left: 45px;
+      padding-top: 3px;
+      position: absolute;
+
+      &__item {
+
+        select {
+          letter-spacing: 0.4px;
+          background-color: @border-color;
+          border-color: @border-color;
+          color: @font-color;
+          font-size: 12px;
+        }
+
+        button {
+          margin-right: -3px;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__mid {
+    background-color: @background-color;
+    .size(100%, 99px);
+    display: flex;
+
+    &__container {
+      position: relative;
+      display: flex;
+
+      &__logo {
+        position: absolute;
+
+        img {
+          float: left;
+          padding: 26px 0px 0px 0px;
+
+        }
+
+      }
+
+      &__search {
+        position: absolute;
+        right: 9.8%;
+        color: @color;
+        .border-radius(20px);
+        display: flex;
+        margin: 29px 0 0 263px;
+        border: 1px solid @font-color;
+        .size(557px, 40px);
+
+        &__cate {
+          .border-radius(20px);
+          .size(157px, 38px);
+          background-color: @background-color;
+
+          select {
+            outline: none;
+            display: flex;
+            padding-left: 22px;
+            height: 38px;
+            border: none;
+            background-color: @background-color;
+            .border-radius(null, 20px, 0, 0, 20px);
+            font-size: 12px;
+            line-height: 24px;
+            color: @color;
+            font-weight: 500;
+
+            span {
+              margin: 6px 0 0 -1px;
+            }
+
+          }
+
+        }
+
+        input {
+          outline: none;
+          border: none;
+          .size(342px, 38px);
+          font-size: 12px;
+          line-height: 24px;
+          color: @color;
+          font-weight: 500;
+        }
+
+        &__line {
+          border: 0.5px solid @font-color;
+          height: 25px;
+          margin-top: 7px;
+          margin-right: 10px;
+        }
+
+        &__button {
+
+          button {
+            color: @background-color;
+            background-color: @inf-color;
+            .size(57px, 40px);
+            margin-top: -1px;
+            border: none;
+            .border-radius(null, 0, 20px, 20px, 0);
+
+            i {
+              padding-right: 5px;
+            }
+
+          }
+
+        }
+
+      }
+
+      &__cart {
+        position: absolute;
+        right: 3%;
+        display: flex;
+
+        &-setting {
+          padding: 35px 0 36px 0;
+          
+          img {
+            width: 27px;
+          }
+        
+        }
+
+        &-cart {
+          padding: 35px 0 36px 0;
+          margin: 0px -10px 0px 19px;
+          position: relative;
+          
+          img {
+            width: 24px;
+          }
+          
+          span {
+            position: absolute;
+            margin-left: -9px;
+            background-color: @border-color;
+            .border-radius(10px);
+            color: @background-color;
+            font-size: 11px;
+            line-height: 1;
+            padding: 2px 5px;
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+  &__navbar {
+    background-color: @inf-color;
+    .size(100%, 50px);
+    display:flex;
+    color: @background-color;
+
+    &__left {
+      float: left;
+      margin: 10px 0 0 0;
+
+      &__button {
+        
+        a {
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          font-size: 14px;
+          line-height: 29px;
+          font-weight: 600;
+          color: @background-color;
+          text-decoration: none;
+          margin: 0 10px 0 0;
+        }
+
+      }
+
+      &-categories {
+        display: none;
+        list-style-type: none;
+        z-index: 1;
+        position: absolute;
+        background-color: @background-color;
+        text-align: left;
+        width: 260px;
+        margin-top: 10px;
+        
+        li {
+            border-bottom: 1px solid @font-color;
+            padding: 20px 0 10px 0;
+            margin-right: 40px;
+          
+            a {
+            text-decoration: none;
+            color: @border-color;
+            cursor: pointer;
+          }
+
+          a:hover {
+            color: @inf-color;
+          }
+
+        }
+
+        li:last-child {
+          border-bottom:none;
+        }
+
+      }
+
+    }
+
+    &__right {
+      float: right;
+
+      &__button {
+        display: none;
+        margin: 20% 0% 0% 0%;
+        
+        &-icon {
+
+          i {
+            font-size: 35px;
+            -webkit-text-stroke: 3px @inf-color;
+          }
+
+        }
+
+      }
+
+      &-menu {
+        letter-spacing: 0.5px;
+        font-size: 13px;
+        line-height: 29px;
+        color: @background-color;
+        font-weight: 600;
+        margin:-8px -5px 0 -21px;
+        padding-right: 8px;
+
+        a {
+          color: @background-color;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: @font-color;
+          text-decoration: underline;
+        }
+
+        li {
+          padding: 19px 0 0 53px;
+          display: inline-block;
+        }
+
+        li:first-child {
+          padding-right: 2px;
+        
+        }
+      }
+
+    }
+
+  }
+
+  &__slider {
+
+    &__box {
+
+      &__item {
+        
+        img {        
+          width: 100%;
+        }
+
+        &__infor {
+          .centerAbsolute(26%, null, null, 20.3%, absolute);
+          width: 752px;
+          z-index: 1;
+         
+          &__text {
+
+            p {
+              font-size: 70px;
+              line-height: 66px;
+              color: @border-color;
+              letter-spacing: 1.2px;
+              font-weight: 600;
+              padding-bottom: 9px;
+            }
+
+            p:last-child {
+              font-size: 16px;
+              line-height: 31px;
+              color: @font-color;
+              letter-spacing: 1.3px;
+              font-weight: normal;
+            }
+
+            span {
+              margin-left: -10px;
+              color: @inf-color;
+              letter-spacing: 1.7px;
+            }
+
+          }
+
+          a {
+            color: @border-color;
+            text-decoration: none;
+            letter-spacing: 0.4px;
+            border: none;
+            background: transparent;
+            font-weight: 600;
+          }
+          
+          &-button {
+            padding-top: 2px;
+            width: 82px;
+            border-bottom: 2px solid @inf-color;
+          }
+
+        }
+
+      }
+
+    }
+
+    &-prev {
+      .centerAbsolute(39%, null, null, 7%, absolute);
+      display: inline-block;
+      .size(60px);
+      background-size: 100% 100%;
+      background-image: url('/assets/images/base-left.png');
+      
+      i {
+        padding-top: 19px;
+        font-size: 23px;
+        font-weight: 900;
+        color: @border-color;
+        margin-left: -5px;
+        -webkit-text-stroke: 1px @background-color;
+      }
+
+    }
+    
+    &-next {
+      .centerAbsolute(39%, null, null, 71%, absolute);
+      display: inline-block;
+      .size(62px);
+      background-size: 100% 100%;
+      background-image: url('/assets/images/base-right.png');
+      
+      i {
+        padding-top: 19px;
+        font-size: 23px;
+        font-weight: 900;
+        color: @background-color;
+        margin-right: -6px;
+        -webkit-text-stroke: 1px @inf-color;
+      }
+
+    }
+
+  }
+
+}

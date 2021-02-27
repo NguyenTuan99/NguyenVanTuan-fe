@@ -3,10 +3,6 @@
     .header {
       
       &__slider {
-
-        &-next {
-          left: 60%;
-        }
         
         &__box {
           
@@ -589,6 +585,7 @@
               position: absolute;
               width: 752px;
               z-index: 1;
+              top: 10%;
               
               &__text {
                 
@@ -1023,7 +1020,6 @@
 
   }
   
-
   @media(min-width: 414px) and (max-width: 767px) {
     .header {
       background-color:@background-color;
@@ -1565,7 +1561,7 @@
               button {
                 color: @background-color;
                 background-color: @inf-color;
-                margin-left: -40px;
+                margin-left: 0px;
                 .size(57px, 40px);
                 .border-radius(null, 0, 20px, 20px, 0);
                 border: none;
@@ -1707,19 +1703,19 @@
             }
 
             &__infor {
-              .centerAbsolute(27%,null, null, 20.5%, absolute);
+              .centerAbsolute(25%,null, null, 15.5%, absolute);
               width: 79.5%;
               z-index: 1;
               
               &__text {
-                
+                margin-bottom: 10px;
                 p {
-                  font-size: 17px;
+                  font-size: 25px;
                   line-height: 0; 
                 }
 
                 p:last-child {
-                  font-size: 10px;
+                  font-size: 15px;
                   line-height: 0;
                   margin-bottom: 0;
                 }
@@ -1771,7 +1767,7 @@
   /*end  header*/
   /* footer*/
 
-@media(min-width:1024px) and (max-width: 1366px) {
+@media(min-width:1024px) and (max-width: 1376px) {
   .footer {
     max-width: 100%;
     margin-top: -10%;
@@ -1780,7 +1776,7 @@
     &__infor {
 
       p{
-        font-size: 20px;
+        font-size: 18px;
         color: @border-color;
         font-weight: 600;
         letter-spacing: 0.99px;
@@ -1793,13 +1789,13 @@
           font-size: 13px;
           line-height: 20px;
           color: @color;
-          font-weight: 600;
+          font-weight: 500;
           letter-spacing: 0.2px;
           
           a {
             text-decoration: none;
             color: @color;
-            font-size: 12px;
+            font-size: 15px;
           }
           
           a:hover {
@@ -1821,10 +1817,20 @@
 
         }
 
+        &__icon {
+          a {
+            i {
+              font-size: 20px;
+            }
+
+          }
+
+        }
+
       }
 
       &__company {
-        padding-left: 90px;
+        padding-left: 100px;
         margin-top: 19px;
         
         ul {
@@ -1838,12 +1844,12 @@
       }
 
       &__cate {
-        padding-left: 90px;
+        padding-left: 100px;
         margin-top: 20px;  
       }
 
       &__link {
-        padding-left: 90px;
+        padding-left: 100px;
         margin-top: 20px;  
       }
 
@@ -1854,7 +1860,7 @@
       &__author {
         
         p {
-          font-size: 15px;
+          font-size: 22px;
         }
 
       }
@@ -1883,29 +1889,44 @@
       &__infor {
         margin-top: 0;
         padding: 55px 0 0 0;
-        
-        &__company {
-          margin-left: 20px;
+        p {
+          font-size: 30px;
         }
 
+        ul {
+
+          li {
+            a {
+              font-size: 20px;
+            }
+          }
+        }
+
+        &__contact {
+
+          &__icon {
+
+            a {
+
+              i {
+                font-size: 20px;
+              }
+
+            }
+
+          }
+
+        }
         &__cate {
-          margin-left: -50px;
+          padding: 0 0 0 15px;
         }
 
         &__link {
-          margin: -13px 0 0 -40px;
+          padding-left: 110px;
           
           p {
             width: 150px;
             font-size: 20px;
-          }
-
-          ul {
-            
-            li {
-              width: 120px;
-            }
-
           }
 
         }
@@ -1916,7 +1937,7 @@
         &__author {
           
           p {
-            font-size: 10px;
+            font-size: 20px;
           }
 
         }
@@ -1926,7 +1947,7 @@
           img {
             max-width: 100%;
             width: auto;
-            padding: 15px 0 20px 0;
+            padding: 40px 0 20px 0;
           }
 
         }
@@ -1936,19 +1957,18 @@
     } 
 
   }
-
+  
   @media(min-width: 360px) and (max-width: 767px) {
     .footer {
       max-width: 100%;
-      margin-top: 12.5%;
+      margin-top: 15%;
       background-color: @background-color;
     
       &__infor {
         margin: -55% 0 -10% 0;
 
         p {
-          width: 100px;
-          font-size: 11px;
+          font-size: 20px;
           color: @border-color;
           font-weight: 600;
           letter-spacing: 0.99px;
@@ -1956,7 +1976,6 @@
   
         ul {
           list-style-type: none;
-          width: 130px;
           
           li {
             font-size: 13px;
@@ -1968,7 +1987,7 @@
             a {
               text-decoration: none;
               color: @color;
-              font-size: 10px;
+              font-size: 13px;
             }
 
             a:hover {
@@ -1992,7 +2011,7 @@
         }
   
         &__company {
-          padding-left: 5%;
+          padding-left: 0;
           margin-top: 19px;
           
           ul {
@@ -2010,7 +2029,7 @@
         }
 
         &__link {
-          padding-left: 5%;
+          padding-left: 0;
           margin-top: 20px;  
         }
 
@@ -2023,7 +2042,7 @@
           p {
             .centerAbsolute(50%,null, null, 50%, null);
             .transform (10px, 0px);
-            font-size: 8px;
+            font-size: 15px;
           }
 
         }
@@ -2031,6 +2050,7 @@
         &__icon {
           
           img {
+            padding-top: 55px;
             max-width: 100%;
             width: auto;
           }
@@ -2045,53 +2065,41 @@
   
   /* end footer*/
   /*content*/
-  
-  @media(max-width: 1376px) {
+
+  @media(max-width: 1367px) {
+
     .content {
+
       &__newsletter {
-        
+      
         &__search {
           
           button {
-            left: 65%;
-            position: absolute;
-            border: none;
-            .size(170px, 58px);
-            .border-radius(29px);
-            background-color:@inf-color;
-            color: @background-color;
-            margin-top: 6px;
+            left: 65.5%;
           }
-
+  
         }
-
+  
       }
-
     }
     
   }
 
-  @media(max-width: 1024px) {
+  @media(max-width: 1025px) {
+
     .content {
+
       &__newsletter {
-        
+      
         &__search {
           
           button {
-            left: 60%;
-            position: absolute;
-            border: none;
-            .size(170px, 58px);
-            .border-radius(29px);
-            background-color:@inf-color;
-            color: @background-color;
-            margin-top: 6px;
+            left: 60.5%;
           }
-
+  
         }
-
+  
       }
-
     }
     
   }
@@ -2276,6 +2284,58 @@
           p {
             padding-top: 10px;
             font-size: 85px;
+          }
+
+        }
+
+      }
+      &__brand {
+
+        &__row {
+          margin-top: 10%;
+          &__icon1 {
+            margin: 0 0 0 0;
+  
+            img {
+              width: 100%;
+            }
+  
+          }
+
+          &__icon2 {
+            margin: 0 0 0 0;
+  
+            img {
+              width: 100%;
+            }
+  
+          }
+
+          &__icon3 {
+            margin: 0 0 0 0;
+  
+            img {
+              width: 100%;
+            }
+  
+          }
+
+          &__icon4 {
+            margin: 0 0 0 0;
+  
+            img {
+              width: 100%;
+            }
+  
+          }
+
+          &__icon5 {
+            margin: 0 0 0 0;
+  
+            img {
+              width: 133%;
+            }
+  
           }
 
         }
@@ -2865,7 +2925,18 @@
           flex-direction: row;
           
           &__item {
-            padding: 0 0 15px 30px;
+            padding: 0 0 15px 15px;
+
+            &__text {    
+                p:first-child {
+                  font-size: 25px;
+                }
+
+                p:last-child {
+                  font-size: 18px;
+                }
+            }
+
           }
 
           &__item:first-child {
@@ -2874,10 +2945,6 @@
 
           &__item:last-child {
             margin: 0;
-
-            img {
-              margin-left: 15px;
-            }
           }
 
         }
@@ -3137,11 +3204,11 @@
             }
   
             &-img {
-              .size(100%, 263px);
+              .size(100%, auto);
             }
   
             p {
-              font-size: 14px;
+              font-size: 20px;
               line-height: 22px;
               font-weight: 600;
               text-align: center;
@@ -3165,6 +3232,7 @@
               
               a:last-child {
                 color: @inf-color;
+                font-size: 20px;
               }
 
             }
@@ -3215,7 +3283,7 @@
             
             img {
               max-width: 100%;
-              .size(688px, unset);
+              .size(100%, unset);
             }
   
             p {
@@ -3229,14 +3297,14 @@
               a {
                 color: @border-color;
                 text-decoration: none;
-                font-size: 19px;
+                font-size: 25px;
               }
 
             }
 
             p:last-child {
               padding: 0;
-              font-size: 15px;
+              font-size: 20px;
               margin: -8px 0px 0 2px;
               
               a:last-child {
@@ -3260,6 +3328,7 @@
           p {
             padding: 70px 0 0 20px;
             line-height: 40px;
+            font-size: 43px;
           }
 
         }
@@ -3269,7 +3338,7 @@
           p {
             letter-spacing: 0.15px;
             padding: 2px 0 0 18px;
-            font-size: 14px;
+            font-size: 20px;
             line-height: 30px;
             font-weight: 500;
             text-align: center;
@@ -3287,7 +3356,7 @@
           }
 
           button {
-            .centerAbsolute(21.5%, null, null, 86.5%, null);
+            .centerAbsolute(21%, null, null, 87%, null);
             .transform (-50%, 0%);
             margin: unset;
           }
@@ -3307,7 +3376,7 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
               height: unset;
             }
@@ -3319,7 +3388,7 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
               height: unset;
             }
@@ -3331,7 +3400,7 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
               height: unset;
             }
@@ -3343,7 +3412,7 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
               height: unset;
             }
@@ -3355,7 +3424,7 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
               height: unset;
             }
@@ -3726,7 +3795,7 @@
             
             img {
               max-width: 100%;
-              .size(508px, unset);
+              .size(100%, auto);
             }
   
             p {
@@ -3797,7 +3866,7 @@
           }
 
           button {
-            .centerAbsolute(21.5%, null, null, 52.5%, null);
+            .centerAbsolute(21%, null, null, 53.5%, null);
             .transform (40%, 0%);
             margin: unset;
           }
@@ -3817,9 +3886,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 150%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }
@@ -3829,9 +3898,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 150%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }
@@ -3841,9 +3910,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 150%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }
@@ -3853,9 +3922,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 150%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }
@@ -3865,9 +3934,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 150%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           } 
@@ -4158,11 +4227,11 @@
             }
   
             &-img {
-              .size(100%, 263px);
+              .size(100%, auto);
             }
   
             p {
-              font-size: 14px;
+              font-size: 20px;
               line-height: 22px;
               font-weight: 600;
               text-align: center;
@@ -4186,6 +4255,7 @@
               
               a:last-child {
                 color: @inf-color;
+                font-size: 20px;
               }
 
             }
@@ -4249,6 +4319,7 @@
               letter-spacing: 0.5px;
               
               a {
+                font-size: 21px;
                 color: @border-color;
                 text-decoration: none;
               }
@@ -4257,11 +4328,11 @@
 
             p:last-child {
               padding: 0;
-              font-size: 12px;
+              font-size: 18px;
               margin: -8px 0px 0 2px;
               
               a:last-child {
-                font-size: 12px;
+                font-size: 18px;
                 color: @inf-color;
               }
 
@@ -4292,7 +4363,7 @@
           p {
             letter-spacing: 0.15px;
             padding: 2px 0 0 18px;
-            font-size: 12px;
+            font-size: 15px;
             line-height: 30px;
             font-weight: 500;
             text-align: center;
@@ -4331,9 +4402,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }
@@ -4343,9 +4414,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }
@@ -4355,9 +4426,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }
@@ -4367,9 +4438,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }
@@ -4379,9 +4450,9 @@
             margin: 20px 0 0 0;
             
             img {
-              max-width: 100%;
+              max-width: 130%;
               transition: all 0.5s;
-              height: unset;
+              height: auto;
             }
 
           }

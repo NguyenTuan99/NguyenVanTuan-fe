@@ -100,8 +100,8 @@
                     </div>
                 </div>
                 <div class="header__mid__container__cart">
-                    <a href="" class="header__mid__container__cart-setting"><img src="assets/images/option.jpg"  alt=""></a>
-                    <a href="" class="header__mid__container__cart-cart"><img src="assets/images/cart.jpg" alt=""><span>2</span></a>
+                    <a href="" class="header__mid__container__cart-setting"><i class="fas fa-cog"></i></a>
+                    <a href="" class="header__mid__container__cart-cart"><i class="fas fa-weight-hanging"></i><span>2</span></a>
                 </div>
             </div>
         </div>

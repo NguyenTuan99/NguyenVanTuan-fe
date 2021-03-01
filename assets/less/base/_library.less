@@ -30,28 +30,28 @@
 		     transform: translateY(@_x);
 }
 
-.size (@width, @height: @width) {
-	width: @width;
-	height: @height;
+.size (@_width, @_height: @_width) {
+	width: @_width;
+	height: @_height;
 }
 
-.border-radius(@all: null, @tl: @all, @tr: @all,@btr: @all, @btl: @all) {
-	border-top-left-radius: @tl;
-	border-top-right-radius: @tr ;
-	border-bottom-right-radius: @btr;
-	border-bottom-left-radius: @btl;
+.border-radius(@_all: null, @_tl: @_all, @_tr: @_all, @_btr: @_all, @_btl: @_all) {
+	border-top-left-radius: @_tl;
+	border-top-right-radius: @_tr ;
+	border-bottom-right-radius: @_btr;
+	border-bottom-left-radius: @_btl;
 }
 
-.flex(@display: @display, @direction: @direction, @content: @content) {
-	display: @display;
-	flex-direction: @direction;
-	justify-content: @content;
+.flex(@_display: @_display, @_direction: @_direction, @_content: @_content) {
+	display: @_display;
+	flex-direction: @_direction;
+	justify-content: @_content;
 }
 
-.centerAbsolute(@top: @top, @right: @right, @bottom: @bottom, @left: @left, @pos: @pos) {
-	top: @top;
-	right: @right;
-	bottom: @bottom;
-	left: @left;
-	position: @pos;
+.centerAbsolute(@_top: @_top, @_right: @_right, @_bottom: @_bottom, @_left: @_left, @_pos: @_pos) {
+	top: @_top;
+	right: @_right;
+	bottom: @_bottom;
+	left: @_left;
+	position: @_pos;
 }

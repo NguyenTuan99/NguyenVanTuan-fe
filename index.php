@@ -206,7 +206,7 @@
         <div class="content__fact">
             <div class="container">
                     <div class="content__fact__box row">
-                        <div class="content__fact__box__item col-lg-3 col-md-6 col-sm-6">
+                        <div class="content__fact__box__item col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="content__fact__box__item__icon">
                                 <img src="assets/images/ship.jpg" alt="ship">
                             </div>
@@ -215,7 +215,7 @@
                                 <p>Free shipping for all US order</p>
                             </div>
                         </div>
-                        <div class="content__fact__box__item col-lg-3 col-md-6 col-sm-6">
+                        <div class="content__fact__box__item col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="content__fact__box__item__icon support">
                                 <img src="assets/images/support.jpg" alt="support">
                             </div>
@@ -224,7 +224,7 @@
                                 <p>We support 24 hours a day</p>
                             </div>
                         </div>
-                        <div class="content__fact__box__item col-lg-3 col-md-6 col-sm-6">
+                        <div class="content__fact__box__item col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="content__fact__box__item__icon day">
                                 <img src="assets/images/return.jpg" alt="30days">
                             </div>
@@ -233,7 +233,7 @@
                                 <p>You have 30 days to return</p>
                             </div>
                         </div>
-                        <div class="content__fact__box__item col-lg-3 col-md-6 col-sm-6">
+                        <div class="content__fact__box__item col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="content__fact__box__item__icon">
                                 <img src="assets/images/payment.jpg" alt="payment">
                             </div>
@@ -541,7 +541,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row footer__infor">
-                <div class="col-lg-3 col-md-6 col-sm-8 col-8 footer__infor__contact">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer__infor__contact">
                     <p>CONTACT US</p>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> <a href="">Lorem Ipsum has been the indus-try's standard</a></li>
@@ -557,7 +557,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-4 col-3 footer__infor__company">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer__infor__company">
                     <p>COMPANY</p>
                     <ul>
                         <li><a href="">About Us</a></li>
@@ -567,7 +567,7 @@
                         <li><a href="">Affilate</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-8 col-8 footer__infor__cate">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer__infor__cate">
                     <p>CATEGORIES</p>
                     <ul>
                         <li><a href="">Home medicine</a></li>
@@ -577,7 +577,7 @@
                         <li><a href="">Fitness & Vitamins</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-4 col-3 footer__infor__link">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer__infor__link">
                     <p>QUICK LINKS</p>
                     <ul>
                         <li><a href="">My Account</a></li>
@@ -592,10 +592,10 @@
         <div class="footer__copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 footer__copyright__author">
+                    <div class="col-lg-6 col-sm-12 footer__copyright__author">
                         <p>@2018 Design by <a href="#">Creative Wp</a> All Rights Reserved</p>
                     </div>
-                    <div class="col-6 footer__copyright__icon">
+                    <div class="col-lg-6 col-sm-12 footer__copyright__icon">
                         <img src="assets/images/bank.png" alt="">
                     </div>
                 </div>
